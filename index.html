@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+	<meta charset="utf-8">
 	<title>Travel Fitness Page</title>
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -17,10 +18,12 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 
 	<!-- Firebase Reference -->
-  <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+	<!-- Jquery script -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -42,6 +45,15 @@
 
 
 		<button type="submit" class="btn btn-danger" id="button_submit">Submit</button>
+		<!-- Testing Google Maps Api -->
+		<h3>Google Maps Demo</h3>
+		<div id="map"></div>
+		<!-- Linking JS -->
+		<script type="text/javascript" src="assets/javascript/main.js"></script>
+		<!-- Script Google Maps Api Key -->
+		<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8vcMBAIaANzkNoh0ByyloVFiXIkfMdho&libraries=restaurant"></script>-->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8vcMBAIaANzkNoh0ByyloVFiXIkfMdho&libraries=restaurant&callback=initMap" async defer></script>
+		<!--<script src="https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8665433,151.1956316&radius=500&type=restaurant&keyword=cruise&key=AIzaSyD8vcMBAIaANzkNoh0ByyloVFiXIkfMdho"</script>-->
 </body>
 
 </html>
