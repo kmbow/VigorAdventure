@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Travel Fitness Page</title>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Hammersmith+One|Luckiest+Guy|Sigmar+One|Varela" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+      <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link async href="http://fonts.googleapis.com/css?family=Advent%20Pro" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+      <link async href="http://fonts.googleapis.com/css?family=Antic" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+      <link async href="http://fonts.googleapis.com/css?family=Audiowide" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+      <link async href="http://fonts.googleapis.com/css?family=Antic" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="script0.js"></script>
+   
+    </head>
+   <body>
+      <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-12">
+            <div>
+              <h1 id="wlcmMsg">Welcome, <span class="nameE" id="user_name"></span></h1>
+              <hr>
+              <br>
+              <br>
+            </div>
+         </div>
+         
+      </div>
+      <br>
+      <br>
+      <div  class="row">
+         <div id="p2-card-1" class="col-md-6 choices">
+            
+            <h2 class="options">Dietary Restrictions</h2>
+            <br>
+            <br>
+            <select class="button" id="dropmenu">
+               <option value="none">None</option>
+               <option value="veg">Vegeterian</option>
+               <option value="vegan">Vegan</option>
+               <option value="pork">Pork</option>
+               <option value="chicken">Chicken</option>
+               <option value="beef">Beef</option>
+               <option value="seafood">Seafood</option>
+            </select>
+         </div>
+         <div id="p2-card-2" class="col-md-6 choices">
+            <h2 class="options">Maximum Cal Per Meal</h2>
+            <form>
+               <br>
+               <input type="text" name="cal" class="button" id="getCal">
+            </form>
+         </div>
+      </div>
+      
+      
+      
+      <div class="row">
+         <div id="p2-card-3" class="col-md-12">
+            <h2 class="options">Zipcode</h2>
+          <form>
+            <br>
+            <input type="text" name="cal" class="button" id="getCal">
+         </form>
+         </div>
+         <div id="p2-card-4" class="col-md-12 choices">
+            <h2 class="options">Maximum Travel Distance</h2>
+            <form action="/action_page.php" class="distanceOptions" id="travelDistance" method="get">
+               <input class="button" type="checkbox" name="vehicle" value="Bike">1-5 miles<br>
+               <br>
+               <input class="button" type="checkbox" name="vehicle" value="Car" > 6-15 miles<br>
+               <br>
+               <input class="button" type="checkbox" name="vehicle" value="Car" > 15+ miles<br>
+            </form>
+         </div>
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <div id="p2-card-5" class="col-md-12">
+            <div id="lstBtn" class="enjoy-css info-css" onclick="window.open('mapstesting2.html')">Submit</div>
+        </div>
+      </div>
+    
+   </body>
+</html>
