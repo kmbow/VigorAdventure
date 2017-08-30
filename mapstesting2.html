@@ -9,6 +9,7 @@
     <script type="text/javascript" src="script1.js "></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8vcMBAIaANzkNoh0ByyloVFiXIkfMdho&libraries=places&callback=initMap"></script>
     <script type="text/javascript" src="script2.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">  
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -21,7 +22,7 @@
         height: 100%;
         margin: 0;
         padding: 0;
-        background-image: url("http://www.bestpsdfreebies.com/wp-content/uploads/2014/09/Blurred-Backgrounds_2.jpg");
+        /* background-image: url("http://www.bestpsdfreebies.com/wp-content/uploads/2014/09/Blurred-Backgrounds_2.jpg"); */
 ;
       }
       .p2-card-1 {
@@ -32,13 +33,32 @@
     left: 20px;
     background-color: white;
     border: 1px solid black;}
+
+    .bg { 
+    /* The image used */
+    background-image: url("http://www.bestpsdfreebies.com/wp-content/uploads/2014/09/Blurred-Backgrounds_2.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#button {
+  width: 100%;
+  
+}
     </style>
   </head>
   <body>
         
         <div id="map"></div>
         <div id="button" class="button btn btn-primary">Reveal Menu</div>
-        <div id="results" class="col-md-12"></div>
+        <div class="bg"></div>
+        
+        
      
     
      
